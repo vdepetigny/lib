@@ -6,7 +6,6 @@ def signup
 	print "> "
 	mdpTrue = gets.chomp
 	signup = {"u" => "mdpTrue"}
-	puts signup ["u"]
 end 
 
 

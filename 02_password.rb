@@ -58,7 +58,7 @@ def sign_in
 end
 
 #prononcer le message de bienvenue
-def greet (true_mdp,mdp)
+def checking (true_mdp,mdp)
 	while mdp != true_mdp
 		puts "Entrez votre mot de passe de nouveau"
  		print "> "
@@ -68,10 +68,16 @@ def greet (true_mdp,mdp)
 		
 end
 
+#dévoiler le terrible secret
+def secrets
+	puts "Félix: Je craque trop sur une moussaillonne, mais ne le dis à personne"
+end
+
 def perform
 	true_mdp = ask_password
 	mdp = sign_in
-	greet(true_mdp,mdp)
+	checking(true_mdp,mdp)
+	secrets
 end
 
 perform

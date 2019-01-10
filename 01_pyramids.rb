@@ -1,4 +1,4 @@
-#Une demi-pyramide
+#construct half a pyramid
 
 def half_pyramid 
 	puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
@@ -10,9 +10,10 @@ def half_pyramid
 		diese = "#" * (floor)
 		puts blank + diese
 	end
+
 end
 
-#Une full pyramide
+#construct a full pyramid
 
 def full_pyramid
 	puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
@@ -24,15 +25,16 @@ def full_pyramid
 		diese = "#" * (floor+floor-1)
 		puts blank + diese
 	end
+	
 end
 
-#Un losange
+#construct a diamond :)
 
 def wtf_pyramid
 	puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu (nombre impair) ?"
 	print "> "
 	user_floors = gets.to_i
-	middle = (user_floors/2) + 1
+	middle = (user_floors/2) +1
 
 	for floor in 1..(middle)
 		blank = " " * (middle - floor)
@@ -48,6 +50,10 @@ def wtf_pyramid
 
 end
 
+def perform
 half_pyramid
 full_pyramid
 wtf_pyramid
+end
+
+perform

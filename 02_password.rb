@@ -1,3 +1,5 @@
+#Ask for the user to put in a password
+
 def ask_password
 	puts "Définissez votre password"
 	print "> "
@@ -5,7 +7,8 @@ def ask_password
 	return true_mdp
 end
 
-#demander le nom de famille
+#Ask for the password
+
 def sign_in
 	puts "Quel est votre password?"
 	print "> "
@@ -13,18 +16,21 @@ def sign_in
 	return mdp
 end
 
-#prononcer le message de bienvenue
+#Check if the password is the same, and if not, ask the password again
+
 def checking (true_mdp,mdp)
+	
 	while mdp != true_mdp
 		puts "ERREUR"
  		print "> "
   		mdp = sign_in()
 	end
-	puts "Vous pouvez entrer"
-		
+	
+	puts "Vous pouvez entrer"	
 end
 
-#dévoiler le terrible secret
+#Reveal a terrible secret
+
 def secrets
 	puts "Félix: Je craque trop sur une moussaillonne, mais ne le dis à personne"
 end

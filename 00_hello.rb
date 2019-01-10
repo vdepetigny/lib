@@ -1,4 +1,4 @@
-#say hello
+# ask the user's name 
 
 def ask_first_name
 	puts "Quel est ton prénom?"
@@ -6,6 +6,8 @@ def ask_first_name
 	first_name = gets.chomp
 	return first_name
 end
+
+# say hello to the user
 
 def say_hello(first_name)
 	puts "Hello #{first_name}!"
